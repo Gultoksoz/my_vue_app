@@ -6,14 +6,28 @@ defineProps({
 })
 
 const count = ref(0)
-let temp = count
+let temp = 0
+let num = 0
+
+function fibonacci() {
+  let num2 = this.count
+  if(num2==0)
+    this.count++
+  else{
+    num=num2
+    num2 = temp + num2
+    temp=num
+    this.count=num2
+  }
+}
+
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
-{{ temp = count }}
+
   <div class="card">
-    <button type="button" @click="count++">count is {{ count }}</button>
+    <button type="button" @click="fibonacci()">count is {{ count }}</button>
     <p>
       Edit
       <code>components/HelloWorld.vue</code> to test HMR
