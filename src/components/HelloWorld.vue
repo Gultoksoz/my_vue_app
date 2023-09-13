@@ -6,11 +6,12 @@ defineProps({
 })
 
 const count = ref(0)
+let temp = count
 </script>
 
 <template>
   <h1>{{ msg }}</h1>
-
+{{ temp = count }}
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
     <p>
