@@ -33,7 +33,6 @@ function onClickFib() {
       <code>components/HelloWorld.vue</code> to test HMR
     </p>
   </div>
-ibo
   <p>
     Check out
     <a href="https://vuejs.org/guide/quick-start.html#local" target="_blank"
